@@ -1,0 +1,259 @@
+/* CSS Variables declared */
+:root
+{
+    --col-1: #ffffff; 
+    --col-2: #000; 
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    color: var(--col-1);
+}
+body::before
+{
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    background: linear-gradient(90deg,rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(daddaaq2w2`.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    width: 100%;
+    height: 1200px;
+    z-index: -1;
+}
+
+/* Mobile Screen Size */
+@media screen and (min-width: 300px) and (max-width: 768px)
+{
+
+/* Wrapper Container */
+.wrapper
+{
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    color: var(--col-2);
+    width: 99%;
+    margin: auto;
+    
+}
+.wrapper .header
+{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: var(--col-1);
+}
+.wrapper .header #description
+{
+    font-style: italic;
+    margin-bottom: 2.5rem;
+}
+.wrapper .form-container
+{
+    position: relative;
+    margin: auto auto 1.2rem auto;
+    width: 100%;
+    
+}
+/* The Survey Form itself */
+#survey-form    
+{
+    width: 75%;
+    margin: auto;
+    padding: 4%;
+    background: rgba(27, 27, 50, 0.8);
+    color: var(--col-1);
+    border-radius: 1%;
+}
+#survey-form .form-group
+{
+    margin: 0 0 0.2rem 0;
+    padding: 1%;
+    
+}
+#survey-form .form-group label
+{
+    margin: 0 0 8px 0;
+    display: flex;
+    justify-content: start;
+    font-size:  1.14rem;
+
+}
+#survey-form .form-group fieldset label
+{
+    margin: 0 0 -20px 0;
+    display: flex;
+    justify-content: start;
+    font-size:  1.14rem;
+}
+#survey-form .form-group fieldset label:last-child
+{
+    margin: 0;
+}
+#survey-form .form-group .form-item
+{
+    display: block;
+    justify-content: start;
+    width: 100%;
+    font-size: 1.0rem;
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    background-clip: padding-box;
+    height: 2.1rem;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#survey-form .form-group .form-item-textarea
+{
+    display: block;
+    justify-content: start;
+    width: 99%;
+    font-size: 1.0rem;
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    background-clip: padding-box;
+    height: 4.5rem;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-item-submit
+{
+    display: block;
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    height: 2.4rem;
+    background-color: #25D366;
+    color: var(--col-1);
+    border-radius: 5px;
+    border: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-item-submit:hover
+{
+    background-color: #1fc05a;
+    
+}
+}
+
+
+@media screen and (min-width: 767px)
+{
+/* Wrapper Container */
+.wrapper
+{
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    color: var(--col-2);
+    width: 99%;
+    margin: auto;
+    
+}
+.wrapper .header
+{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: var(--col-1);
+}
+.wrapper .header #description
+{
+    font-style: italic;
+    margin-bottom: 2.5rem;
+}
+.wrapper .form-container
+{
+    position: relative;
+    margin: auto auto 1.2rem auto;
+    width: 70%;
+    
+}
+/* The Survey Form itself */
+#survey-form    
+{
+    width: 75%;
+    margin: auto;
+    padding: 4%;
+    background: rgba(27, 27, 50, 0.8);
+    color: var(--col-1);
+    border-radius: 1%;
+}
+#survey-form .form-group
+{
+    margin: 0 0 0.2rem 0;
+    padding: 1%;
+    
+}
+#survey-form .form-group label
+{
+    margin: 0 0 8px 0;
+    display: flex;
+    justify-content: start;
+    font-size:  1.14rem;
+
+}
+#survey-form .form-group fieldset label
+{
+    margin: 0 0 -20px 0;
+    display: flex;
+    justify-content: start;
+    font-size:  1.14rem;
+}
+#survey-form .form-group fieldset label:last-child
+{
+    margin: 0;
+}
+#survey-form .form-group .form-item
+{
+    display: block;
+    justify-content: start;
+    width: 100%;
+    font-size: 1.0rem;
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    background-clip: padding-box;
+    height: 2.1rem;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#survey-form .form-group .form-item-textarea
+{
+    display: block;
+    justify-content: start;
+    width: 99%;
+    font-size: 1.0rem;
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    background-clip: padding-box;
+    height: 4.5rem;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-item-submit
+{
+    display: block;
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    height: 2.4rem;
+    background-color: #25D366;
+    color: var(--col-1);
+    border-radius: 5px;
+    border: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-item-submit:hover
+{
+    background-color: #1fc05a;
+ 
+}
+}

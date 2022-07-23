@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 id="title">JnrDevs Survey Form</h1>
+            <p id="description">
+                This survey is to gather useful information to help Junior Developers to advance their course.
+            </p>
+        </div>
+        <div class="form-container">
+            <form id="survey-form"  action="#">
+                <div class="form-group">
+                    <label for="name" id="name-label">
+                        Full name: 
+                    </label>
+                    <input class="form-item" id="name" name="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">
+                        Email:
+                    </label>
+                    <input class="form-item" id="email" name="email" type="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">
+                        Age:
+                    </label>
+                    <input id="number" class="form-item" name="age" type="number" min="9" max="99" placeholder="Age" required>
+                </div>
+                <div class="form-group">
+                    <label for="crole">
+                        Position (Current role)
+                    </label>
+                    <select class="form-item" name="currentrole" id="dropdown" >
+                        <option value="">Select Current Role</option>
+                        <option value="student">Student</option>
+                        <option value="fullTimeJob">Full Time Job</option>
+                        <option value="fullTimeIntern">Full Time Intern</option>
+                        <option value="ptime">Part Time</option>
+                        <option value="prefernot">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Would you recommend web dev to upcoming junior developers.</legend>
+                        <label for="definately"><input id="definately" name="recommend" type="radio" value="recommend" checked>Definately</label><br>
+                        <label for="maybe"><input id="maybe" name="recommend" type="radio" value="recommend">Maybe</label><br>
+                        <label for="notsure"><input id="notsure" name="recommend" type="radio" value="recommend">Not Sure</label>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>What would you like to improve.</legend>
+                        <label for="back-end"><input id="back-end" name="improveskill" type="checkbox" value="skill">Back-End Projects</label><br>
+                        <label for="front-end"><input id="front-end" name="improveskill" type="checkbox" value="skill">Front-End Projects</label><br>
+                        <label><input id="dvisualisation" name="improveskill" type="checkbox" value="skill">Data Visualization</label><br>
+                        <label ><input id="web3" name="improveskill" type="checkbox" value="skill">Web3</label><br>
+                        <label ><input id="dscience" name="improveskill" type="checkbox" value="skill >Data Science</label><br>
+                        <label ><input id="graphicsdesign" name="improveskill" type="checkbox" value="skill">Graphic Design</label><br>
+                        <label ><input id="uidesign" name="improveskill" type="checkbox" value="skill">UI Design</label><br>
+                        <label ><input id="animation" name="improveskill" type="checkbox" value="skill">Animation</label><br>
+                        <label ><input id="os" name="improveskill" type="checkbox" value="skill">Open Source Community</label><br>
+                        <label ><input id="challenges" name="improveskill" type="checkbox" value="skill">Challenges</label><br>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <p>Leave a Comment:</p>
+                    <textarea class="form-item-textarea" name="comment" id="comment" cols="50" rows="5" placeholder="Enter your comment here"></textarea>
+               </div>
+               <div class="form-group">
+                    <button class="form-item-submit" type="submit" id="submit" name="submit">Submit</button>
+               </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
